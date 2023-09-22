@@ -213,4 +213,10 @@ body {
     font-size: 0.5rem !important;
     padding: 0.5rem 1rem !important;
   }
+  .footer-cards > * {
+    margin-bottom: 0.5rem;
+  }
+  .footer-title {
+    margin-top: 0.5rem !important;
+  }
 }
