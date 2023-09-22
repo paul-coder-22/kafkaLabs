@@ -52,13 +52,24 @@ body {
   background-color: var(--footer--thiird-button);
   border-color: #eee;
 }
+.footer-third-form a:hover {
+  background-color: var(--footer--thiird-button) !important;
+}
+
 .footer-second-form a {
   background-color: var(--foter-second-button);
   border-color: #eee;
 }
+.footer-second-form a:hover {
+  background-color: var(--foter-second-button);
+}
+
 .footer-first-form a {
   background-color: var(--footer-first-button);
   border-color: #eee;
+}
+.footer-first-form a:hover {
+  background-color: var(--footer-first-button);
 }
 .footer-submit-btn {
   background-color: var(--footer-submit-button) !important;
@@ -71,6 +82,9 @@ body {
 .card {
   min-height: 9rem;
 }
+.btn {
+  color: #ffffff !important;
+}
 
 .btn-primary-opening {
   background-color: var(--btn-color) !important;
@@ -81,14 +95,20 @@ body {
   border-radius: 0%;
 }
 
+/* job-listing section */
 .btn-job-card {
   background-color: var(--btn-job-card) !important;
   color: #f2f7fb !important;
   font-weight: 600;
   text-align: center;
-  padding: 0.5rem 0.7rem !important;
-  border-radius: 0%;
+  padding: 0.5rem 2.7rem !important;
+  margin: 5px 3px !important;
+  border-radius: 20px !important;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
 }
+
 .job-listing-card-spacing > * {
   margin-bottom: 0.5rem;
 }
@@ -145,14 +165,40 @@ body {
   /* width: 12rem !important; */
   font-size: calc(1.3rem + 0.6vw) !important ;
 }
-.child {
+
+.dual-image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dual-image-container > * {
+  height: 50% !important;
+  margin: 0 0 1rem 0;
+}
+
+/* btn icon */
+.active:after {
+  content: "\01F891" !important;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+  margin: 0.2rem;
+}
+.collapsible-btn:after {
+  content: "\01F893";
+  color: white;
+  font-weight: bold;
+  float: right;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+  margin: 0.2rem;
+}
+.collapsible-btn {
   width: 100%;
-  background: white;
-  color: grey;
-  margin: 0 0.5em;
-  padding: 0.5em;
-  /* optional */
-  min-height: 100%;
+}
+
+/* visible ul text  */
+.visible-ul-list-text {
+  margin-bottom: 0.2rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -167,17 +213,4 @@ body {
     font-size: 0.5rem !important;
     padding: 0.5rem 1rem !important;
   }
-}
-
-element.style {
-  display: flex;
-  flex-direction: column;
-  /* height: inherit; */
-  height: 100% !important;
-  max-height: 100% !important;
-  justify-content: space-evenly;
-}
-element.style {
-  height: 40%;
-  /* width: 100%; */
 }
